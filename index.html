@@ -44,20 +44,26 @@
 
 
 <!-- menu -->
-<section id="menu-container">
-<ul class="menu dropdown align-spaced" data-dropdown-menu>
-<li><a href="#"> <i class="fi-ticket"></i> Tickets</a> </li>
-<li><a href="#">Lineup</a>
-  <ul  id="submenu-container"class="menu">
-    <li><a href="#">Viernes</a> </li>
-    <li><a href="#">Sabado</a> </li>
-    <li><a href="#">Domingo</a> </li>
-  </ul>
-</li>
+<section id="scrollSticky" data-sticky-container>
+  <div class="data-sticky" data-sticky data-options="marginTop:0;"
+  data-sticky-on="small" data-top-anchor="scrollSticky">
+    <nav id="menu-container" data-magellan>
+      <ul class="menu dropdown align-spaced" data-dropdown-menu>
+      <li><a href="#tickets-container"> <i class="fi-ticket"></i> Tickets</a> </li>
+      <li><a href="#Lineup-container">Lineup</a>
+        <ul  id="submenu-container"class="menu">
+          <li><a data-toggle-dia="panelViernes" href="#Lineup-container">Viernes</a> </li>
+          <li><a data-toggle-dia="panelSabado" href="#Lineup-container">Sabado</a> </li>
+          <li><a data-toggle-dia="panelDomingo" href="#Lineup-container">Domingo</a> </li>
+        </ul>
+      </li>
 
-<li><a href="#">Info</a> </li>
-<li><a href="#">Suscribete</a> </li>
-</ul>
+      <li><a href="#info-container">Info</a> </li>
+      <li><a href="#suscribete-container">Suscribete</a> </li>
+      </ul>
+    </nav>
+  </div>
+
 </section>
 <!-- /menu -->
 
@@ -72,7 +78,7 @@
 <!-- /tickets -->
 
 <!-- Lineup -->
-<section id="Lineup-container">
+<section id="Lineup-container" data-magellan-target="Lineup-container">
   <h3 class="text-center">Lineup</h3>
   <ul class="tabs text-center" data-tabs id="lineup-tabs">
     <li class="tabs-title is-active">
@@ -350,7 +356,7 @@
 <!-- Lineup -->
 
 <!-- Compra de boletos -->
-<section id="tickets-container">
+<section id="tickets-container" data-magellan-target="tickets-container">
   <h3 class="text-center">Compra tus boletos</h3>
   <div class="row" data-equalizer data-equalize-on:"small">
     <div class="column small-10 small-offset-1 medium-6 medium-offset-3">
@@ -394,18 +400,39 @@
   </div>
 </section>
 <!-- /Compra de boletos -->
+<!-- Suscribete -->
+<section id="suscribete-container" data-magellan-target="suscribete-container">
+<h3 class="text-center">Suscribete</h3>
+<h4 class="text-center"><small>Y recibe las ultimas novedades del concierto</small> </h4>
+<form  action="" method="" novalidate data-abide>
+  <div class="row column small-12 medium-6 text-center error-container alert-callout"
+  style="display: none;" data-abide-error>
+  <p><i class="fi-alert">Ingresó un correo electronico no valido </i><p>
+</div>
+<div class="row columns small-12 medium-6 " >
+  <div class="input-group">
+    <span class="input-group-label"> <i class="fi-mail"></i></span>
+    <input type="email" name="email" class="input-group-field"
+    placeholder="tu@correo.com" required>
+      <div class="input-group-button">
+      <input type="submit" class="button" value="¡suscribirse¡">
+    </div>
+
+</div>
+
+</div>
+</form>
+</section>
+<!-- /Suscribete -->
 
 <!-- ifo -->
-<section id="info-container">
+<section id="info-container"data-magellan-target="info-container">
 <h3 class="text-center">Información</h3>
-<div class="text-center">
-  <img data-interchange=" [ https://1mo2f44bo6lxqaiw53rzkxp1-wpengine.netdna-ssl.com/wp-content/uploads/revslider/home-june-2016/imagen-logo-square.jpg , small] , [ https://1mo2f44bo6lxqaiw53rzkxp1-wpengine.netdna-ssl.com/wp-content/uploads/revslider/home-june-2016/imagen-logo-square.jpg , small ]
-  , [ https://1mo2f44bo6lxqaiw53rzkxp1-wpengine.netdna-ssl.com/wp-content/uploads/revslider/home-june-2016/imagen-logo-square.jpg , small] , [ https://1mo2f44bo6lxqaiw53rzkxp1-wpengine.netdna-ssl.com/wp-content/uploads/revslider/home-june-2016/imagen-logo-square.jpg , medium ]
-  ,[ https://1mo2f44bo6lxqaiw53rzkxp1-wpengine.netdna-ssl.com/wp-content/uploads/revslider/home-june-2016/imagen-logo-square.jpg , small] , [ https://1mo2f44bo6lxqaiw53rzkxp1-wpengine.netdna-ssl.com/wp-content/uploads/revslider/home-june-2016/imagen-logo-square.jpg , large ]" >
-
+<div class="info-map" data-interchange="[assets/map-small.html, small] , [assets/maps.html , medium]"></div>
 </div>
 </section>
 <!-- ifo -->
+
 
 
 

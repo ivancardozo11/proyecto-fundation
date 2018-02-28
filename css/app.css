@@ -2,7 +2,7 @@ body{
   background-color: #ee3f54;
   font-family: 'Bree Serif', serif;
 }
-h1,h2,h3,h4,h5 button{
+h1,h2,h3,h4,h5 button, input[type="button"]{
   font-family: 'Bree Serif', serif;
 }
 #social-container{
@@ -105,4 +105,27 @@ pricing-table a.button{
   background-color: #161742;
   color: white;
   padding: 1em 0;
+}
+#info-container .info-map iframe{
+  width: 100%;
+}
+#suscribete-container{
+  background-color: #ee3f54;
+  color: white;
+  padding: 1em 0;
+}
+#suscribete-container h4 small{
+  color: #ffcddc;
+}
+#suscribete-container input[type="button"]{
+  font-family: 'Bree Serif', serif;
+
+}
+#suscribete-container .error-container{
+  font-family: 'Bree Serif' , serif;
+}
+
+.is-invalid-input :not(:focus){
+  background-color: rgb(236, 195, 198);
+  border-color: rgb(236, 195, 198);
 }
