@@ -20,6 +20,7 @@ h1,h2,h3,h4,h5 button, input[type="button"]{
 #menu-container li a{
   color: white;
   font-family: 'Bree Serif', serif;
+  text-transform: uppercase;
 
 }
 #submenu-container li a:hover,
@@ -128,4 +129,10 @@ pricing-table a.button{
 .is-invalid-input :not(:focus){
   background-color: rgb(236, 195, 198);
   border-color: rgb(236, 195, 198);
+}
+#offCanvas,
+#offCanvas li a{
+  background-color: black;
+  color: white;
+  font-family: 'Bree serif',serif;
 }

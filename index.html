@@ -12,6 +12,34 @@
     <link rel="stylesheet" href="css/pricing-table.css">
   </head>
   <body>
+    <div class="off-canvas-wrapper">
+      <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+        <div id="offCanvas" class="off-canvas position-left" data-off-canvas>
+        <nav data-magellan>
+          <ul class="vertical menu">
+            <!-- parte de adentro del contenedor -->
+
+
+            <li><a href="#tickets-container"> <i class="fi-ticket"></i> Tickets</a> </li>
+            <li><a href="#Lineup-container">Lineup</a>
+              <ul  id="submenu-container"class="menu">
+                <li><a data-toggle-dia="panelViernes" href="#Lineup-container">Viernes</a> </li>
+                <li><a data-toggle-dia="panelSabado" href="#Lineup-container">Sabado</a> </li>
+                <li><a data-toggle-dia="panelDomingo" href="#Lineup-container">Domingo</a> </li>
+              </ul>
+            </li>
+
+            <li><a href="#info-container">Info</a> </li>
+            <li><a href="#suscribete-container">Suscribete</a> </li>
+
+            
+            <!-- / parte de adentro del contenedor -->
+          </ul>
+        </nav>
+
+      </div><!-- / off canvas position-left  -->
+    </div><!-- / off canvas wrapper inner  -->
+  </div><!--  / off canvas wrapper  -->
     <!-- social -->
     <section id= "social-container">
       <div class="row align-center text-center">
@@ -32,23 +60,26 @@
         </a>
       </div>
     </section>
-<!-- social -->
+    <!-- social -->
 
-<!-- Logo -->
-<section id="logo-container">
-<div class="callout text-center">
-<h1>Platzipalooza</h1>
-</div>
-</section>
-<!-- Logo -->
+    <!-- Logo -->
+    <section id="logo-container">
+    <div class="callout text-center">
+    <h1>Platzipalooza</h1>
+    </div>
+    </section>
+    <!-- Logo -->
 
 
-<!-- menu -->
-<section id="scrollSticky" data-sticky-container>
-  <div class="data-sticky" data-sticky data-options="marginTop:0;"
-  data-sticky-on="small" data-top-anchor="scrollSticky">
+    <!-- menu -->
+    <section id="scrollSticky" data-sticky-container>
+    <div class="data-sticky" data-sticky data-options="marginTop:0;"
+    data-sticky-on="small" data-top-anchor="scrollSticky">
     <nav id="menu-container" data-magellan>
-      <ul class="menu dropdown align-spaced" data-dropdown-menu>
+      <ul class=" menu aling-spaced align-center show-for-small-only ">
+          <li> <a href="#" data-toggle="offCanvas">Menu</a></li>
+         </ul>
+      <ul class="menu dropdown align-spaced show-for-medium" data-dropdown-menu>
       <li><a href="#tickets-container"> <i class="fi-ticket"></i> Tickets</a> </li>
       <li><a href="#Lineup-container">Lineup</a>
         <ul  id="submenu-container"class="menu">
@@ -62,25 +93,25 @@
       <li><a href="#suscribete-container">Suscribete</a> </li>
       </ul>
     </nav>
-  </div>
+    </div>
 
-</section>
-<!-- /menu -->
+    </section>
+    <!-- /menu -->
 
-<!-- tickets -->
-<section id="tickets-action">
-  <div class="callout large text-center">
+    <!-- tickets -->
+    <section id="tickets-action">
+    <div class="callout large text-center">
     <a href="#">
       <button class="large hollow button">Comprar boletos</button>
     </a>
-  </div>
-</section>
-<!-- /tickets -->
+    </div>
+    </section>
+    <!-- /tickets -->
 
-<!-- Lineup -->
-<section id="Lineup-container" data-magellan-target="Lineup-container">
-  <h3 class="text-center">Lineup</h3>
-  <ul class="tabs text-center" data-tabs id="lineup-tabs">
+    <!-- Lineup -->
+    <section id="Lineup-container" data-magellan-target="Lineup-container">
+    <h3 class="text-center">Lineup</h3>
+    <ul class="tabs text-center" data-tabs id="lineup-tabs">
     <li class="tabs-title is-active">
       <a href="#panelViernes">Viernes</a>
       </li>
@@ -90,11 +121,11 @@
       <li class="tabs-title">
       <a href="#panelDomingo">Domingo</a>
     </li>
-</ul>
+    </ul>
 
 
 
-  <div class="tabs-content" data-tabs-content="lineup-tabs">
+    <div class="tabs-content" data-tabs-content="lineup-tabs">
     <!-- PARTE VIERNES -->
     <div class="tabs-panel is-active" id="panelViernes">
       <div class="row ">    <!-- ROW -->
@@ -169,13 +200,13 @@
                       </div>                      <!-- solucionando el problema -->
             </div>
           <!-- 6 columna -->
-</div> <!-- PANEL row -->
-</div>
-</div>
+    </div> <!-- PANEL row -->
+    </div>
+    </div>
 
             <!--/ PARTE VIERNES -->
-<!-- SABADO PANEL -->
-  <div class="tabs-content sabado" data-tabs-content="lineup-tabs">
+    <!-- SABADO PANEL -->
+    <div class="tabs-content sabado" data-tabs-content="lineup-tabs">
     <div class="tabs-panel is-active" id="panelSabado">
 
 
@@ -192,73 +223,73 @@
             </div>
             </div>
           </div>
-<!--  sabado tab 1 -->
-<!--  sabado tab 2 -->
-<div class="small-12 medium-6 column">
-  <div class="orbit" data-orbit>
-  <div class="orbit-container">
+    <!--  sabado tab 1 -->
+    <!--  sabado tab 2 -->
+    <div class="small-12 medium-6 column">
+    <div class="orbit" data-orbit>
+    <div class="orbit-container">
     <div class="orbit-slide" >
       <img class="orbit-image " src="images/a.jpg" alt="Guns n' Roses">
         <figcaption class="orbit-caption is-active">Guns n' Roses</figcaption>
       </div>
     </div>
     </div>
-  </div>
-<!--  sabado tab 2 -->
-<!--  sabado tab 3 -->
-<div class="small-12 medium-6 column">
-  <div class="orbit" data-orbit>
-  <div class="orbit-container">
+    </div>
+    <!--  sabado tab 2 -->
+    <!--  sabado tab 3 -->
+    <div class="small-12 medium-6 column">
+    <div class="orbit" data-orbit>
+    <div class="orbit-container">
     <div class="orbit-slide" >
       <img class="orbit-image " src="images/a.jpg" alt="Guns n' Roses">
         <figcaption class="orbit-caption is-active">Guns n' Roses</figcaption>
       </div>
     </div>
     </div>
-  </div>
-<!--  sabado tab 3 -->
-<!--  sabado tab 4 -->
-<div class="small-12 medium-6 column">
-  <div class="orbit" data-orbit>
-  <div class="orbit-container">
+    </div>
+    <!--  sabado tab 3 -->
+    <!--  sabado tab 4 -->
+    <div class="small-12 medium-6 column">
+    <div class="orbit" data-orbit>
+    <div class="orbit-container">
     <div class="orbit-slide" >
       <img class="orbit-image " src="images/a.jpg" alt="Guns n' Roses">
         <figcaption class="orbit-caption is-active">Guns n' Roses</figcaption>
       </div>
     </div>
     </div>
-  </div>
-<!--  sabado tab 4 -->
-<!--  sabado tab 5 -->
-<div class="small-12 medium-6 column">
-  <div class="orbit" data-orbit>
-  <div class="orbit-container">
+    </div>
+    <!--  sabado tab 4 -->
+    <!--  sabado tab 5 -->
+    <div class="small-12 medium-6 column">
+    <div class="orbit" data-orbit>
+    <div class="orbit-container">
     <div class="orbit-slide" >
       <img class="orbit-image " src="images/a.jpg" alt="Guns n' Roses">
         <figcaption class="orbit-caption is-active">Guns n' Roses</figcaption>
       </div>
     </div>
     </div>
-  </div>
-<!--  sabado tab 5 -->
-<!--  sabado tab 6 -->
-<div class="small-12 medium-6 column">
-  <div class="orbit" data-orbit>
-   <div class="orbit-container">
+    </div>
+    <!--  sabado tab 5 -->
+    <!--  sabado tab 6 -->
+    <div class="small-12 medium-6 column">
+    <div class="orbit" data-orbit>
+    <div class="orbit-container">
     <div class="orbit-slide" >
       <img class="orbit-image " src="images/a.jpg" alt="Guns n' Roses">
         <figcaption class="orbit-caption is-active">Guns n' Roses</figcaption>
       </div>
     </div>
-   </div>
-  </div>
-<!--  sabado tab 6 -->
+    </div>
+    </div>
+    <!--  sabado tab 6 -->
 
 
 
-</div><!-- /row sabado -->
-</div>
-</div>
+    </div><!-- /row sabado -->
+    </div>
+    </div>
     <!-- /SABADO PANEL -->
 
     <!-- PANEL DOMINGO -->
@@ -350,67 +381,67 @@
 
     </div> <!-- cerrando row -->
 
-</div>
-<!-- aca -->
-</section>
-<!-- Lineup -->
+    </div>
+    <!-- aca -->
+    </section>
+    <!-- Lineup -->
 
-<!-- Compra de boletos -->
-<section id="tickets-container" data-magellan-target="tickets-container">
-  <h3 class="text-center">Compra tus boletos</h3>
-  <div class="row" data-equalizer data-equalize-on:"small">
+    <!-- Compra de boletos -->
+    <section id="tickets-container" data-magellan-target="tickets-container">
+    <h3 class="text-center">Compra tus boletos</h3>
+    <div class="row" data-equalizer data-equalize-on:"small">
     <div class="column small-10 small-offset-1 medium-6 medium-offset-3">
       <ul class="pricing-table">
-  <li class="title">Platino</li>
-  <li class="price">$120</li>
-  <li class="description">Acceso viernes, sabado y domingo</li>
-  <li>2 bebidas por cada dia</li>
-  <li>Parqueadero incluido todos los dias</li>
-  <li>Participa en un sorteo para acceder al backstage</li>
-  <li><a class="button" href="#">Comprar Platino</a></li>
-</ul>
+    <li class="title">Platino</li>
+    <li class="price">$120</li>
+    <li class="description">Acceso viernes, sabado y domingo</li>
+    <li>2 bebidas por cada dia</li>
+    <li>Parqueadero incluido todos los dias</li>
+    <li>Participa en un sorteo para acceder al backstage</li>
+    <li><a class="button" href="#">Comprar Platino</a></li>
+    </ul>
     </div>
-<!-- segunda columna  de compra de boletos -->
-<div class="column small-6 medium-4 medium-offset-2">
-  <ul class="pricing-table">
-<li class="title">Gold</li>
-<li class="price">$90</li>
-<li class="description">Acceso viernes, sabado y domingo</li>
-<li data-equalizer-watch>Una bebida incluida  por cada dia</li>
-<li>-</li>
-<li>-</li>
-<li><a class="button" href="#">Comprar Gold</a></li>
-</ul>
-</div>
-<!-- segunda columna  de compra de boletos -->
-<!-- 3 columna  de compra de boletos -->
-<div class="column small-6 medium-4 ">
-  <ul class="pricing-table">
-<li class="title">Silver</li>
-<li class="price">$65</li>
-<li class="description">Acceso viernes, sabado y domingo</li>
-<li data-equalizer-watch>-</li>
-<li>-</li>
-<li>-</li>
-<li><a class="button" href="#">Comprar Silver</a></li>
-</ul>
-</div>
-<!-- 3 columna  de compra de boletos -->
+    <!-- segunda columna  de compra de boletos -->
+    <div class="column small-6 medium-4 medium-offset-2">
+    <ul class="pricing-table">
+    <li class="title">Gold</li>
+    <li class="price">$90</li>
+    <li class="description">Acceso viernes, sabado y domingo</li>
+    <li data-equalizer-watch>Una bebida incluida  por cada dia</li>
+    <li>-</li>
+    <li>-</li>
+    <li><a class="button" href="#">Comprar Gold</a></li>
+    </ul>
+    </div>
+    <!-- segunda columna  de compra de boletos -->
+    <!-- 3 columna  de compra de boletos -->
+    <div class="column small-6 medium-4 ">
+    <ul class="pricing-table">
+    <li class="title">Silver</li>
+    <li class="price">$65</li>
+    <li class="description">Acceso viernes, sabado y domingo</li>
+    <li data-equalizer-watch>-</li>
+    <li>-</li>
+    <li>-</li>
+    <li><a class="button" href="#">Comprar Silver</a></li>
+    </ul>
+    </div>
+    <!-- 3 columna  de compra de boletos -->
 
-  </div>
-</section>
-<!-- /Compra de boletos -->
-<!-- Suscribete -->
-<section id="suscribete-container" data-magellan-target="suscribete-container">
-<h3 class="text-center">Suscribete</h3>
-<h4 class="text-center"><small>Y recibe las ultimas novedades del concierto</small> </h4>
-<form  action="" method="" novalidate data-abide>
-  <div class="row column small-12 medium-6 text-center error-container alert-callout"
-  style="display: none;" data-abide-error>
-  <p><i class="fi-alert">Ingresó un correo electronico no valido </i><p>
-</div>
-<div class="row columns small-12 medium-6 " >
-  <div class="input-group">
+    </div>
+    </section>
+    <!-- /Compra de boletos -->
+    <!-- Suscribete -->
+    <section id="suscribete-container" data-magellan-target="suscribete-container">
+    <h3 class="text-center">Suscribete</h3>
+    <h4 class="text-center"><small>Y recibe las ultimas novedades del concierto</small> </h4>
+    <form  action="" method="" novalidate data-abide>
+    <div class="row column small-12 medium-6 text-center error-container alert-callout"
+    style="display: none;" data-abide-error>
+    <p><i class="fi-alert">Ingresó un correo electronico no valido </i><p>
+    </div>
+    <div class="row columns small-12 medium-6 " >
+    <div class="input-group">
     <span class="input-group-label"> <i class="fi-mail"></i></span>
     <input type="email" name="email" class="input-group-field"
     placeholder="tu@correo.com" required>
@@ -418,27 +449,20 @@
       <input type="submit" class="button" value="¡suscribirse¡">
     </div>
 
-</div>
+    </div>
 
-</div>
-</form>
-</section>
-<!-- /Suscribete -->
+    </div>
+    </form>
+    </section>
+    <!-- /Suscribete -->
 
-<!-- ifo -->
-<section id="info-container"data-magellan-target="info-container">
-<h3 class="text-center">Información</h3>
-<div class="info-map" data-interchange="[assets/map-small.html, small] , [assets/maps.html , medium]"></div>
-</div>
-</section>
-<!-- ifo -->
-
-
-
-
-
-
-
+    <!-- ifo -->
+    <section id="info-container"data-magellan-target="info-container">
+    <h3 class="text-center">Información</h3>
+    <div class="info-map" data-interchange="[assets/map-small.html, small] , [assets/maps.html , medium]"></div>
+    </div>
+    </section>
+    <!-- ifo -->
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
